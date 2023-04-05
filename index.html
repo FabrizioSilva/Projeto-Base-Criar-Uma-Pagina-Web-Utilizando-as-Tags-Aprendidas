@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com HTML</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1 id="inicio">Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#Primeiros-computadores">Primeiros Computadores</a></li>
+        <li><a href="#Internet-Como-surgiu?">Internet - Como surgiu?</a></li>
+        <li><a href="#O-que-são-Servers-e-Clients">O que são <i>Servers e Clients</i>?</a></li>
+        <li><a href="#Como-é-uma-estrutura-básica-de-um-HTML?">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#Entendendo-a-diferença-entre-listas-ordenadas-e-não-ordenadas">Entendendo a diferença entre listas Ordenadas e Não-Ordenadas</a></li>
+        <li><a href="#HTML-não-é-uma-Linguagem-de-Programação">HTML não é uma Linguagem de Programação</a></li>
+        <li><a href="#Links-de-referências">Links de Referências</a></li>
+    </ul>
+
+    <h2 id="Primeiros-computadores"> Primeiros Computadores</h2>
+    <h5><u><a href="#inicio">(Índice)</a></u></h5>
+    <p>O primeiro computador foi criado entre 1943 e 1946 e se chamava <strong><i><u>Eletronic Numerical Integrator and Computer — ENIAC.</u></i></strong></p>
+    <p>Para o seu desenvolvimento, foi investido cerca de 6 milhões de dólares e seu funcionamento dependia de uma série de fatores, como 200 mil watts de energia.</p>
+    <p>Um fator de grande importância é a memória, algo que não tinha na época do <strong>ENIAC.</strong> Cerca de 10 anos depois, foi lançado o <strong>RAMAX 305</strong>, uma máquina de armazenamento em disco feito pela <strong>IBM.</strong></p>
+
+    <h2 id="Internet-Como-surgiu?">Internet - Como surgiu?</h2>
+    <h5><u><a href="#inicio">(Índice)</a></u></h5>
+    <p>A internet <strong><i><u>surgiu em 1969 com o nome de ARPANET com a empresa Arpa  (Advanced Research and Projects Agency).</u></i></strong></p>
+    <p>Ela foi herdada de pesquisas anteriores feitas pelos militares americanos na época da Guerra Fria, entre os Estados Unidos e a União Soviética.</p>
+    <p>Os Americanos temiam que seu Computador Central que ficava no Pentágono em Washington fosse atacado por mísseis, então as informações foram distribuídas entre outros locais por meio de cabos subterrâneos.</p>
+    <p>A pesquisa foi financiada  pela Nasa e pelo Pentágono, tinha como objetivo criar uma rede que fosse capaz de armazenar dados e resistir a uma destruição parcial – caso houvesse, por exemplo, um ataque nuclear.</p>
+
+    <h2 id="O-que-são-Servers-e-Clients">O que são <i>Servers e Clients</i>?</h2>
+    <h5><u><a href="#inicio">(Índice)</a></u></h5>
+    <p>Servidor<strong>(SERVER)</strong> é o computador no qual foi configurado em uma rede para oferecer algum tipo de serviço. Já o cliente<strong>(CLIENT)</strong>, é o computador que está do outro lado, que foi configurado para utilizar o serviço que é oferecido pelo servidor. Neste caso, <strong><i><u>podemos afirmar então que o computador servidor é aquele que oferece um serviço</u></i></strong> e o <strong><i><u>computador cliente é aquele que se ocupa de um serviço.</u></i></strong> Por exemplo, ao acessarmos uma página da web, a mesma é disponibilizada a partir de um computador servidor. O nosso computador, chamado de cliente, irá realizar as solicitações de acesso às páginas da web que estão armazenadas em um servidor.</p>
+
+    <h2 id="Como-é-uma-estrutura-básica-de-um-HTML?">Como é uma estrutura básica de um HTML?</h2>
+    <h5><u><a href="#inicio">(Índice)</a></u></h5>
+    <p>O documento HTML sempre inicia com o que chamamos de <strong><i><u>estrutura básica.</u></i></strong> Esta estrutura é quase que imutável. Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código. Geralmente os editores como o Sublime Text já tem atalhos para iniciar os documentos HTMLs com essa estrutura, logo, você não precisa se preocupar em decorá-la, mas é bom que faça. Veja abaixo como ela se inicia:</p>
+    <ol>
+      <li>&lt;!DOCTYPE html&gt;</li>
+      <li>&lt;html lang="pt-br"&gt;</li>
+      <li>&lt;head&gt;</li>
+      <li>&lt;title&gt;</li>
+      <li><p><strong>Título da página</strong></p></li> 
+      <li>&lt;title/&gt;</li>
+      <li>&lt;meta charset="utf-8"&gt;</li>
+      <li>&lt;/head&gt;</li>
+      <li>&lt;body&gt;</li>
+      <li><p><strong>Aqui vai o código HTML que fará seu site aparecer.</strong></p></li>
+      <li>&lt;/body&gt;</li>
+      <li>&lt;/html&gt;</li>
+    </ol>
+    <p>É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:</p>
+    <ul>
+        <li>Definição do documento (doctype)</li>
+        <li>Cabeça (head)</li>
+        <li>Corpo (body)</li>
+    </ul>
+    <h4><u>DOCTYPE - Definindo o documento</u></h4>
+    <p>Uma coisa importante: SEMPRE deve existir o doctype, que é este código &lt;!DOCTYPE html&gt;.</p>
+    <p>O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. Lembre-se: o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.</p>
+
+    <h4><u>HEAD</u></h4>
+    <p>Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag head.</p>
+    
+    <h4><u>BODY</u></h4>
+    <p>Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo par de tags &lt;body&gt; e &lt;/body&gt;.</p>
+    <p>Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se aplicam, e quais são os resultados deste modelo. Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. Ainda: para definir qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar marcada no cabeçalho do mesmo documento.</p>
+    <p>Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção da sua página, onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.</p>
+    
+    <h2 id="Entendendo-a-diferença-entre-listas-ordenadas-e-não-ordenadas">Entendendo a diferença entre listas Ordenadas e Não-Ordenadas</h2>
+    <h5><u><a href="#inicio">(Índice)</a></u></h5>
+    <p>A principal diferença entre a <strong>lista ordenada</strong> e a <strong>lista não-ordenada</strong> está na maneira com que os itens de cada lista são apresentados - a lista ordenada enumera os elementos; a lista não-ordenada coloca marcadores antes de cada elemento.</p>
+    <p><i>Compare as duas listas a seguir:</i></p>
+    <h4><u>Lista Ordenada</u></h4>
+    <ol>
+        <li>Item número um.</li>
+        <li>Item número dois.</li>
+        <li>Item número três.</li>
+    </ol>
+
+    <h4><u>Lista Não-Ordenada</u></h4>
+    <ul>
+        <li>Primeiro Item</li>
+        <li>Segundo Item</li>
+        <li>Terceiro Item</li>
+    </ul>
+
+    <h4><u>TAGS - Lista Ordenada</u></h4>
+    <ol>
+        <li>&lt;ol&gt;</li>
+        <li>&lt;li&gt; &lt;/li&gt;</li>
+        <li>&lt;/ol&gt;</li>
+    </ol>
+    <p>Uma <strong>lista ordenada</strong> é delimitada pelas etiquetas &lt;ol&gt; e &lt;/ol&gt; (<strong>O</strong>rdered <strong>L</strong>ist). Cada item da lista é delimitado pelas etiquetas &lt;li&gt; e &lt;/li&gt; (<strong>L</strong>ist <strong>I</strong>tem).</p>
+
+    <h4><u>TAGS - Lista Não-Ordenada</u></h4>
+    <ul>
+        <li>&lt;ul&gt;</li>
+        <li>&lt;li&gt; &lt;/li&gt;</li>
+        <li>&lt;/ul&gt;</li>
+    </ul>
+    <p>A estrutura da <strong>lista não-ordenada</strong> é semelhante a da lista ordenada - porém, ao invés de ser construída com o elemento OL, é construída com o elemento &lt;ul&gt e &lt;/ul&gt (<strong>U</strong>nordered <strong>L</strong>ist).</p>
+    
+    <h2 id="HTML-não-é-uma-Linguagem-de-Programação">HTML não é uma Linguagem de Programação</h2>
+    <p>o <strong>HTML não é uma linguagem de programação, e sim uma linguagem de marcação.</strong> Então, ele está principalmente na parte visual das aplicações, na parte do frontend. <u>Em conjunto com o <strong>CSS</strong> e o <strong>Javascript</strong>, formam a base do frontend e das páginas web!</u></p>
+    <h5><u><a href="#inicio">(Índice)</a></u></h5>
+
+    <h2 id="Links-de-referências">Links de Referências</h2>
+    <ul>
+        <li><a href="http://dio.me" title="Clique aqui e confira" target="_blank">Digital Inovation One.</a></li>
+        <li><a href="https://academiapme-my.sharepoint.com/:p:/g/personal/renato_dio_me/EWgg3UxUJt1GhLwXu6Z0L1cB7EhiHOoMQ-8vECmYXzDwYA?rtime=Q4hZlkg120g" title="Clique aqui e confira" target="_blank">Arquivos DIO - Client x Server.</a></li>
+        <li><a href="https://academiapme-my.sharepoint.com/:p:/g/personal/renato_dio_me/EUBD7085ULpApq4i1_8fWfMBhVJQMyxt2K_d1sJOhRUN_w?e=vk37t3" title="Clique aqui e confira" target="_blank">Arquivos DIO - HTML na Prática.</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp" title="Clique aqui e confira" target="_blank">W3 Schools.</a></li>
+    </ul>
+
+    <h4><u><a href="#inicio">Voltar para o topo da página(Índice)!</a></u></h4>
+
+</body>
+</html>
